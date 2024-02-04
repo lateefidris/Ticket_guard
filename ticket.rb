@@ -24,6 +24,9 @@ class Ticket
         "ticket:#{ticket_id} #{action} used"
         end
     end
+    
+    def ticket_id
+        @ticket_id
+    end
 
 end
-

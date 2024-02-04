@@ -58,5 +58,17 @@ class Booth
   def ticket_exists?(ticket_id)
     @ticket_ids.include?(ticket_id)
   end
+  
+  def add(*tickets)
+    tickets.each do |ticket|
+      @ticket_list.push(ticket)
+      @ticket_ids.push(ticket.ticket_id)
+    end
+  end
  
 end    
+
+#booth = Booth.new
+#booth.open
+
+#pp booth.ids
