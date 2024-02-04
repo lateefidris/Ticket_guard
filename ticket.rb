@@ -4,7 +4,7 @@ class Ticket
     def initialize()
         @ticket_info = Hash.new
         random_combination = []
-        @ticket
+       
         6.times do |number|
             random_number = rand(0..9)
             random_combination.push(random_number)
